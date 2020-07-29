@@ -1,5 +1,5 @@
 <template>
-  <div class="el-select-tree">
+  <div class="el-select-tree" :class="customClass">
     <el-popover
       ref="elPopover"
       v-model="visible"
@@ -49,7 +49,7 @@
         class="el-select-tree__empty"
         :style="{ width: minWidth + 'px' }"
       >
-        无数据
+        Không có dữ liệu
       </p>
 
       <!-- trigger input -->
@@ -102,12 +102,13 @@ export default {
     event: 'change'
   },
   props: {
+    customClass: String,
     clearable: Boolean,
     defaultExpandAll: Boolean,
     checkStrictly: Boolean,
     placeholder: {
       type: String,
-      default: '请选择'
+      default: 'Select'
     },
     props: {
       type: Object,

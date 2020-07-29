@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "core-js": "^2.6.5",
-    "element-ui": "^2.4.5",
+    "element-ui": "https://github.com/dungvt9691/element#develop",
     "operation-tree-node": "^1.0.4",
     "vue": "^2.6.10"
   },
